@@ -1,1 +1,1 @@
-This my first time to use git and github. And i hope i can learn something that i want, expecially android.
+This my first time to use git and github. And i hope i can learn something that i want, expecially android.为什么中文显示乱码？
