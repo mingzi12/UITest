@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView mTextView;
     private RatingBar mRatingBar;
     private Button mButton;
+    private Button mUpdateBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         initNextBtn();
         initSimplebtn();
         initBaseBtn();
+        initUpdateAdapterBtn();
     }
     public void initSeekBarViews(){
         mSeekbar= (SeekBar) findViewById(R.id.sb_normal);
@@ -84,6 +86,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent mBaseIntent=new Intent(MainActivity.this,BaseAdapterActivity.class);
                 startActivity(mBaseIntent);
+            }
+        });
+    }
+    public void initUpdateAdapterBtn(){
+        mUpdateBtn= (Button) findViewById(R.id.mUpdateAdapter);
+        mUpdateBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            Intent mUpdateIntent=new Intent(MainActivity.this,UpdateListViewActivity.class);
+                startActivity(mUpdateIntent);
             }
         });
     }

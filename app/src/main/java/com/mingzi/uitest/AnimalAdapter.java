@@ -42,10 +42,9 @@ public class AnimalAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder mViewHolder=null;
         if (convertView==null) {
-            convertView = LayoutInflater.from(mContext).inflate(R.layout.item_list_animal,
-                    parent, false);
+            LayoutInflater mLayoutInflater = LayoutInflater.from(mContext);
+            convertView = mLayoutInflater.inflate(R.layout.item_list_animal, parent, false);
             mViewHolder=new ViewHolder();
-
             mViewHolder.img_icon  = (ImageView) convertView.findViewById(R.id.img_icon);
             mViewHolder.txt_aName = (TextView) convertView.findViewById(R.id.txt_aName);
             mViewHolder.txt_aSpeak = (TextView) convertView.findViewById(R.id.txt_aSpeak);

@@ -29,6 +29,10 @@
         <activity
             android:name=".BaseAdapterActivity"
             android:label="@string/title_activity_base_adapter"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UpdateListViewActivity"
+            android:label="@string/title_activity_update_list_view"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
