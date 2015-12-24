@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="madapterarray">
+        <item>hobit</item>
+        <item>abcd</item>
+        <item>llajlf</item>
+         <item>hobit</item>
+        <item>abcd</item>
+        <item>llajlf</item>
+         <item>hobit</item>
+        <item>abcd</item>
+        <item>llajlf</item>
+        <item>hobit</item>
+        <item>abcd</item>
+        <item>llajlf</item>
+        <item>hobit</item>
+        <item>abcd</item>
+        <item>llajlf</item>
+        <item>hobit</item>
+        <item>abcd</item>
+        <item>llajlf</item>
+    </string-array>
+</resources>

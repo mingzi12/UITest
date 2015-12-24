@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UITest</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_adapter">AdapterActivity</string>
+    <string name="title_activity_simple_adapter">SimpleAdapterActivity</string>
+    <string name="title_activity_base_adapter">BaseAdapterActivity</string>
+</resources>
