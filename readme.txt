@@ -1,1 +1,1 @@
-这是我第一次使用git和github。
+This my first time to use git and github. And i hope i can learn something that i want, expecially android.
