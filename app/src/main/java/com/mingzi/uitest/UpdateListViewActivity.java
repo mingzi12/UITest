@@ -36,6 +36,7 @@ public class UpdateListViewActivity extends AppCompatActivity {
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mTextView.setVisibility(View.GONE);
                 mAdapter.add(new Data(R.mipmap.fish,"给猪哥跪了~~~ x " + flag));
                 flag++;
             }

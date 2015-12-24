@@ -41,8 +41,8 @@ public class UpdateAdapter extends BaseAdapter {
         if(convertView==null) {
             convertView = LayoutInflater.from(mContext).inflate(R.layout.update_list_item,parent,false);
             mViewHolder=new ViewHolder();
-            mViewHolder.icon_Img.setBackgroundResource(mDatas.get(position).getImgId());
-            mViewHolder.txt_context.setText(mDatas.get(position).getContent());
+           mViewHolder.icon_Img= (ImageView) convertView.findViewById(R.id.icon_ImageView);
+            mViewHolder.txt_context= (TextView) convertView.findViewById(R.id.text1);
             convertView.setTag(mViewHolder);
         }
         else {
