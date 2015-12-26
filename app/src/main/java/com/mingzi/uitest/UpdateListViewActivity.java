@@ -24,8 +24,8 @@ public class UpdateListViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_update_list_view);
         initViews();
         mContext=UpdateListViewActivity.this;
-        mDatas = new LinkedList<Data>();
-        mAdapter = new UpdateAdapter((LinkedList<Data>) mDatas,mContext);
+        mDatas = new LinkedList<>();
+        mAdapter = new UpdateAdapter( mDatas,mContext);
         mListView.setAdapter(mAdapter);
     }
     public void initViews(){
@@ -37,7 +37,7 @@ public class UpdateListViewActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mTextView.setVisibility(View.GONE);
-                mAdapter.add(new Data(R.mipmap.fish,"给猪哥跪了~~~ x " + flag));
+                mAdapter.add(new Data(R.mipmap.ic_fish,"给猪哥跪了~~~ x " + flag));
                 flag++;
             }
         });

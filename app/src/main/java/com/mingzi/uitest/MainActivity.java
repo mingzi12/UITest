@@ -10,6 +10,8 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.mingzi.uitest.gridview.GridViewActivity;
+
 public class MainActivity extends AppCompatActivity {
     private SeekBar mSeekbar;
     private TextView mTextView;
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         initSimplebtn();
         initBaseBtn();
         initUpdateAdapterBtn();
+        initGridViewBtn();
     }
     public void initSeekBarViews(){
         mSeekbar= (SeekBar) findViewById(R.id.sb_normal);
@@ -98,5 +101,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(mUpdateIntent);
             }
         });
+    }
+    public void initGridViewBtn(){
+        Button mGridViewBtn= (Button) findViewById(R.id.mGridViewBtn);
+        mGridViewBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mGridViewIntent = new Intent(MainActivity.this, GridViewActivity.class);
+                startActivity(mGridViewIntent);
+            }
+        });
+
     }
 }
