@@ -41,6 +41,10 @@
         <activity
             android:name=".spinner.SpinnerActivity"
             android:label="@string/title_activity_spinner"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".autocompletetext.AutoCompleteTextActivity"
+            android:label="@string/title_activity_auto_complete_text"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

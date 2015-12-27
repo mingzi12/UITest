@@ -68,14 +68,17 @@ public class SpinnerActivity extends AppCompatActivity implements AdapterView.On
                 if(one_selected){
                     Toast.makeText(mContext,"您的分段是~：" + parent.getItemAtPosition(position).toString(),
                             Toast.LENGTH_SHORT).show();
-                }else one_selected = true;
+                }
+                else
+                    one_selected = true;
                 break;
             case R.id.spin_two:
                 if(two_selected){
                     TextView txt_player_name = (TextView) view.findViewById(R.id.txt_player_name);
                     Toast.makeText(mContext, "您选择的英雄是~：" + txt_player_name.getText().toString(),
                             Toast.LENGTH_SHORT).show();
-                }else two_selected = true;
+                }else
+                    two_selected = true;
                 break;
         }
     }

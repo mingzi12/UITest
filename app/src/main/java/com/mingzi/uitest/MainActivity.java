@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.mingzi.uitest.autocompletetext.AutoCompleteTextActivity;
 import com.mingzi.uitest.gridview.GridViewActivity;
 import com.mingzi.uitest.spinner.SpinnerActivity;
 
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mButton;
     private Button mUpdateBtn;
     private Button mSpinnerBtn;
+    private Button mAutoCompleteBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         initUpdateAdapterBtn();
         initGridViewBtn();
         initSpinnerBtn();
+        initAutoCompleteText();
     }
     public void initNextBtn(){
         mButton= (Button) findViewById(R.id.arrayadapter);
@@ -82,6 +85,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent mSpinerIntent=new Intent(MainActivity.this, SpinnerActivity.class);
                 startActivity(mSpinerIntent);
+            }
+        });
+    }
+    public void initAutoCompleteText(){
+        mAutoCompleteBtn = (Button) findViewById(R.id.mAutoCompleteBtn);
+        mAutoCompleteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mAutoIntent = new Intent(MainActivity.this, AutoCompleteTextActivity.class);
+                startActivity(mAutoIntent);
             }
         });
     }

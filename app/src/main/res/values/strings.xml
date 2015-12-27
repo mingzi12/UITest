@@ -7,5 +7,6 @@
     <string name="title_activity_update_list_view">UpdateListViewActivity</string>
     <string name="title_activity_grid_view">GridViewActivity</string>
     <string name="title_activity_spinner">SpinnerActivity</string>
-    <string name="spin_title">璀璨砖石</string>
+    <string name="spin_title">璀璨钻石</string>
+    <string name="title_activity_auto_complete_text">AutoCompleteTextActivity</string>
 </resources>
