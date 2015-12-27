@@ -34,6 +34,9 @@
             android:name=".UpdateListViewActivity"
             android:label="@string/title_activity_update_list_view"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".gridview.GridViewActivity"
+            android:label="@string/title_activity_grid_view"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
