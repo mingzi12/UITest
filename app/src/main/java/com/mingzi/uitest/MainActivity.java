@@ -5,62 +5,24 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RatingBar;
-import android.widget.SeekBar;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.mingzi.uitest.gridview.GridViewActivity;
+import com.mingzi.uitest.spinner.SpinnerActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private SeekBar mSeekbar;
-    private TextView mTextView;
-    private RatingBar mRatingBar;
     private Button mButton;
     private Button mUpdateBtn;
+    private Button mSpinnerBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initSeekBarViews();
-        initRatingBarViews();
         initNextBtn();
         initSimplebtn();
         initBaseBtn();
         initUpdateAdapterBtn();
         initGridViewBtn();
-    }
-    public void initSeekBarViews(){
-        mSeekbar= (SeekBar) findViewById(R.id.sb_normal);
-        mTextView= (TextView) findViewById(R.id.mtext);
-        mSeekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                mTextView.setText("当前进度是" + progress + "/100");
-
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-                Toast.makeText(MainActivity.this, "按下Seekbar", Toast.LENGTH_SHORT).show();
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-                Toast.makeText(MainActivity.this, "离开Seekbar", Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
-    public void initRatingBarViews(){
-        mRatingBar= (RatingBar) findViewById(R.id.mRatingBar);
-        mRatingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
-            @Override
-            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-                Toast.makeText(MainActivity.this, "Rating" + String.valueOf(rating),
-                        Toast.LENGTH_SHORT).show();
-            }
-        });
+        initSpinnerBtn();
     }
     public void initNextBtn(){
         mButton= (Button) findViewById(R.id.arrayadapter);
@@ -112,5 +74,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+    public void initSpinnerBtn(){
+        mSpinnerBtn= (Button) findViewById(R.id.mSpinnerBtn);
+        mSpinnerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mSpinerIntent=new Intent(MainActivity.this, SpinnerActivity.class);
+                startActivity(mSpinerIntent);
+            }
+        });
     }
 }

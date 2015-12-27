@@ -1,27 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     >
-    <SeekBar
-        android:id="@+id/sb_normal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:max="100"/>
-    <TextView
-        android:id="@+id/mtext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <RatingBar
-        android:id="@+id/mRatingBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:numStars="5"
-        android:rating="0.0"
-        android:stepSize="1.0"/>
     <Button
         android:id="@+id/arrayadapter"
         android:layout_width="wrap_content"
@@ -33,23 +15,43 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="SimpleAdapter"/>
+        android:text="SimpleAdapter"
+        android:layout_above="@+id/mUpdateAdapter"
+        android:layout_centerHorizontal="true" />
     <Button
         android:id="@+id/mBaseAdapter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="BaseAdapter"/>
+        android:text="BaseAdapter"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
     <Button
         android:id="@+id/mUpdateAdapter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="更新适配器"/>
+        android:text="更新适配器"
+        android:layout_below="@+id/arrayadapter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
     <Button
         android:id="@+id/mGridViewBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="测试GridView"/>
-</LinearLayout>
+        android:text="测试GridView"
+        android:layout_alignTop="@+id/mUpdateAdapter"
+        android:layout_alignLeft="@+id/simpleadapter"
+        android:layout_alignStart="@+id/simpleadapter" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试Spinner"
+        android:id="@+id/mSpinnerBtn"
+        android:layout_alignBottom="@+id/mGridViewBtn"
+        android:layout_alignRight="@+id/mBaseAdapter"
+        android:layout_alignEnd="@+id/mBaseAdapter" />
+</RelativeLayout>
