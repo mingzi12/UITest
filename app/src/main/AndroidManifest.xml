@@ -49,6 +49,14 @@
         <activity
             android:name=".expandablelistview.ExpandableListViewActivity"
             android:label="@string/title_activity_expandable_list_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".viewflipper.StaticViewFlipperActivity"
+            android:label="@string/title_activity_view_flipper"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".viewflipper.DynamicViewFlipActivity"
+            android:label="@string/title_activity_dynamic_view_flip"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

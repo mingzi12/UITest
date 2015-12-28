@@ -10,6 +10,8 @@ import com.mingzi.uitest.autocompletetext.AutoCompleteTextActivity;
 import com.mingzi.uitest.expandablelistview.ExpandableListViewActivity;
 import com.mingzi.uitest.gridview.GridViewActivity;
 import com.mingzi.uitest.spinner.SpinnerActivity;
+import com.mingzi.uitest.viewflipper.DynamicViewFlipActivity;
+import com.mingzi.uitest.viewflipper.StaticViewFlipperActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button mButton;
@@ -28,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         initSpinnerBtn();
         initAutoCompleteText();
         initExpandableViewBtn();
+        initFlipBtn();
+        initDynamicFlipBtn();
     }
     public void initNextBtn(){
         mButton= (Button) findViewById(R.id.arrayadapter);
@@ -100,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    public void initExpandableViewBtn(){
+    public void initExpandableViewBtn() {
         Button mExpandViewBtn = (Button) findViewById(R.id.mExpandViewBtn);
         mExpandViewBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -110,4 +114,26 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+       public void initFlipBtn() {
+           Button mFlipBtn = (Button) findViewById(R.id.flipper_btn);
+           mFlipBtn.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View v) {
+                   Intent mFlipBtnIntent = new Intent(MainActivity.this, StaticViewFlipperActivity.class);
+                   startActivity(mFlipBtnIntent);
+               }
+           });
+       }
+           public void initDynamicFlipBtn(){
+        Button mDynamicBtn = (Button) findViewById(R.id.dynamic_flipper_btn);
+        mDynamicBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mDynaFlipIntent = new Intent(MainActivity.this, DynamicViewFlipActivity.class);
+                startActivity(mDynaFlipIntent);
+            }
+        });
+    }
+
+
 }

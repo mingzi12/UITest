@@ -82,4 +82,24 @@
         android:layout_below="@+id/mGridViewBtn"
         android:layout_alignLeft="@+id/mGridViewBtn"
         android:layout_alignStart="@+id/mGridViewBtn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Flipper"
+        android:id="@+id/flipper_btn"
+        android:layout_alignTop="@+id/mExpandViewBtn"
+        android:layout_alignLeft="@+id/mSpinnerBtn"
+        android:layout_alignStart="@+id/mSpinnerBtn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="动态Flipper"
+        android:id="@+id/dynamic_flipper_btn"
+        android:layout_below="@+id/mAutoCompleteBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
