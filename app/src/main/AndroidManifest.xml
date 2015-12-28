@@ -45,6 +45,10 @@
         <activity
             android:name=".autocompletetext.AutoCompleteTextActivity"
             android:label="@string/title_activity_auto_complete_text"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".expandablelistview.ExpandableListViewActivity"
+            android:label="@string/title_activity_expandable_list_view"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

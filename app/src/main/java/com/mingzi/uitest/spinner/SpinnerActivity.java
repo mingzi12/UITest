@@ -47,7 +47,7 @@ public class SpinnerActivity extends AppCompatActivity implements AdapterView.On
         mData.add(new Hero(R.mipmap.ic_kobe2,"德邦总管：赵信（XinZhao）"));
         mData.add(new Hero(R.mipmap.ic_anthony,"狂战士：奥拉夫（Olaf）"));
 
-        myAdadpter = new MyAdapter<Hero>(mData,R.layout.item_spin_hero) {
+        myAdadpter = new MyAdapter<Hero>(mData,R.layout.item_spin_player) {
             @Override
             public void bindView(ViewHolder holder, Hero obj) {
                 holder.setImageResource(R.id.img_player_icon,obj.gethIcon());

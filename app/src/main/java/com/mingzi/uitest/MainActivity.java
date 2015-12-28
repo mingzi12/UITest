@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.mingzi.uitest.autocompletetext.AutoCompleteTextActivity;
+import com.mingzi.uitest.expandablelistview.ExpandableListViewActivity;
 import com.mingzi.uitest.gridview.GridViewActivity;
 import com.mingzi.uitest.spinner.SpinnerActivity;
 
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         initGridViewBtn();
         initSpinnerBtn();
         initAutoCompleteText();
+        initExpandableViewBtn();
     }
     public void initNextBtn(){
         mButton= (Button) findViewById(R.id.arrayadapter);
@@ -95,6 +97,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent mAutoIntent = new Intent(MainActivity.this, AutoCompleteTextActivity.class);
                 startActivity(mAutoIntent);
+            }
+        });
+    }
+    public void initExpandableViewBtn(){
+        Button mExpandViewBtn = (Button) findViewById(R.id.mExpandViewBtn);
+        mExpandViewBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mExpIntent = new Intent(MainActivity.this, ExpandableListViewActivity.class);
+                startActivity(mExpIntent);
             }
         });
     }
