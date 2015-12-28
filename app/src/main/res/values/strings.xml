@@ -12,4 +12,5 @@
     <string name="title_activity_expandable_list_view">ExpandableListViewActivity</string>
     <string name="title_activity_view_flipper">ViewFlipperActivity</string>
     <string name="title_activity_dynamic_view_flip">DynamicViewFlipActivity</string>
+    <string name="title_activity_toast">ToastActivity</string>
 </resources>

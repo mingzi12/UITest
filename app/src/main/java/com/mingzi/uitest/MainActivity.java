@@ -10,6 +10,7 @@ import com.mingzi.uitest.autocompletetext.AutoCompleteTextActivity;
 import com.mingzi.uitest.expandablelistview.ExpandableListViewActivity;
 import com.mingzi.uitest.gridview.GridViewActivity;
 import com.mingzi.uitest.spinner.SpinnerActivity;
+import com.mingzi.uitest.toast.ToastActivity;
 import com.mingzi.uitest.viewflipper.DynamicViewFlipActivity;
 import com.mingzi.uitest.viewflipper.StaticViewFlipperActivity;
 
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         initExpandableViewBtn();
         initFlipBtn();
         initDynamicFlipBtn();
+        initToastBtn();
     }
     public void initNextBtn(){
         mButton= (Button) findViewById(R.id.arrayadapter);
@@ -134,6 +136,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+            public void initToastBtn(){
+                Button mToastBtn = (Button) findViewById(R.id.toastBtn);
+                mToastBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent mToastIntent = new Intent(MainActivity.this, ToastActivity.class);
+                        startActivity(mToastIntent);
+                    }
+                });
+         }
 
 }

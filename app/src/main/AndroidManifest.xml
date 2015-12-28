@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_black_cat"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -57,6 +57,10 @@
         <activity
             android:name=".viewflipper.DynamicViewFlipActivity"
             android:label="@string/title_activity_dynamic_view_flip"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".toast.ToastActivity"
+            android:label="@string/title_activity_toast"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
