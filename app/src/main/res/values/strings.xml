@@ -13,4 +13,5 @@
     <string name="title_activity_view_flipper">ViewFlipperActivity</string>
     <string name="title_activity_dynamic_view_flip">DynamicViewFlipActivity</string>
     <string name="title_activity_toast">ToastActivity</string>
+    <string name="title_activity_notify">NotifyActivity</string>
 </resources>

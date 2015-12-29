@@ -9,6 +9,7 @@ import android.widget.Button;
 import com.mingzi.uitest.autocompletetext.AutoCompleteTextActivity;
 import com.mingzi.uitest.expandablelistview.ExpandableListViewActivity;
 import com.mingzi.uitest.gridview.GridViewActivity;
+import com.mingzi.uitest.notification.NotifyActivity;
 import com.mingzi.uitest.spinner.SpinnerActivity;
 import com.mingzi.uitest.toast.ToastActivity;
 import com.mingzi.uitest.viewflipper.DynamicViewFlipActivity;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initNotifyBtn();
         initNextBtn();
         initSimplebtn();
         initBaseBtn();
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         initFlipBtn();
         initDynamicFlipBtn();
         initToastBtn();
+
     }
     public void initNextBtn(){
         mButton= (Button) findViewById(R.id.arrayadapter);
@@ -146,5 +149,14 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
          }
-
+        public void initNotifyBtn(){
+            Button mNotifyBtn = (Button) findViewById(R.id.notify_btn);
+            mNotifyBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent mNotifyIntent = new Intent(MainActivity.this, NotifyActivity.class);
+                    startActivity(mNotifyIntent);
+                }
+            });
+        }
 }
