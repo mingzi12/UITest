@@ -14,6 +14,7 @@ import com.mingzi.uitest.spinner.SpinnerActivity;
 import com.mingzi.uitest.toast.ToastActivity;
 import com.mingzi.uitest.viewflipper.DynamicViewFlipActivity;
 import com.mingzi.uitest.viewflipper.StaticViewFlipperActivity;
+import com.mingzi.uitest.viewpager.oneActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button mButton;
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         initFlipBtn();
         initDynamicFlipBtn();
         initToastBtn();
-
+        initViewPagerBtn();
     }
     public void initNextBtn(){
         mButton= (Button) findViewById(R.id.arrayadapter);
@@ -159,4 +160,14 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
+    public void initViewPagerBtn(){
+        Button mViewPagerBtn = (Button) findViewById(R.id.viewpager_btn);
+        mViewPagerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mViewPagerIntent = new Intent(MainActivity.this,oneActivity.class);
+                startActivity(mViewPagerIntent);
+            }
+        });
+    }
 }

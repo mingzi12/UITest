@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mingzi.uitest">
+
     <uses-permission android:name="android.permission.FLASHLIGHT" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
@@ -68,9 +69,11 @@
             android:name=".notification.NotifyActivity"
             android:label="@string/title_activity_notify"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".notification.Notify2Activity">
-
-        </activity>
+        <activity android:name=".notification.Notify2Activity"></activity>
+        <activity
+            android:name=".viewpager.oneActivity"
+            android:label="@string/title_activity_one"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

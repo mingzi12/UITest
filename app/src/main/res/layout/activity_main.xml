@@ -79,9 +79,9 @@
         android:text="测试ExpandView"
         android:textAllCaps="false"
         android:id="@+id/mExpandViewBtn"
-        android:layout_below="@+id/mGridViewBtn"
-        android:layout_alignLeft="@+id/mGridViewBtn"
-        android:layout_alignStart="@+id/mGridViewBtn" />
+        android:layout_below="@+id/mUpdateAdapter"
+        android:layout_toRightOf="@+id/arrayadapter"
+        android:layout_toEndOf="@+id/arrayadapter" />
 
     <Button
         android:layout_width="wrap_content"
@@ -121,4 +121,14 @@
         android:layout_below="@+id/flipper_btn"
         android:layout_alignLeft="@+id/flipper_btn"
         android:layout_alignStart="@+id/flipper_btn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="ViewPager"
+        android:id="@+id/viewpager_btn"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
