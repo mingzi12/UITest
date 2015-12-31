@@ -8,7 +8,9 @@
     android:background="@color/colorPrimary">
     <TextView
         android:id="@+id/mtextview2"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This is the second view"/>
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:text="This is the second view" />
 </LinearLayout>

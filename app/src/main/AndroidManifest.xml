@@ -69,10 +69,14 @@
             android:name=".notification.NotifyActivity"
             android:label="@string/title_activity_notify"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".notification.Notify2Activity"></activity>
+        <activity android:name=".notification.Notify2Activity" />
         <activity
-            android:name=".viewpager.oneActivity"
+            android:name=".viewpager.ViewActivity"
             android:label="@string/title_activity_one"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".pagerstrip.PagerTitleActivity"
+            android:label="@string/title_activity_pager_title"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

@@ -10,11 +10,12 @@ import com.mingzi.uitest.autocompletetext.AutoCompleteTextActivity;
 import com.mingzi.uitest.expandablelistview.ExpandableListViewActivity;
 import com.mingzi.uitest.gridview.GridViewActivity;
 import com.mingzi.uitest.notification.NotifyActivity;
+import com.mingzi.uitest.pagerstrip.PagerTitleActivity;
 import com.mingzi.uitest.spinner.SpinnerActivity;
 import com.mingzi.uitest.toast.ToastActivity;
 import com.mingzi.uitest.viewflipper.DynamicViewFlipActivity;
 import com.mingzi.uitest.viewflipper.StaticViewFlipperActivity;
-import com.mingzi.uitest.viewpager.oneActivity;
+import com.mingzi.uitest.viewpager.ViewActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button mButton;
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         initDynamicFlipBtn();
         initToastBtn();
         initViewPagerBtn();
+        initPagerTitleBtn();
     }
     public void initNextBtn(){
         mButton= (Button) findViewById(R.id.arrayadapter);
@@ -165,8 +167,18 @@ public class MainActivity extends AppCompatActivity {
         mViewPagerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent mViewPagerIntent = new Intent(MainActivity.this,oneActivity.class);
+                Intent mViewPagerIntent = new Intent(MainActivity.this,ViewActivity.class);
                 startActivity(mViewPagerIntent);
+            }
+        });
+    }
+    public void initPagerTitleBtn(){
+        Button mPagerTitleBtn = (Button) findViewById(R.id.pager_title_btn);
+        mPagerTitleBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mPagerTitleIntent = new Intent(MainActivity.this, PagerTitleActivity.class);
+                startActivity(mPagerTitleIntent);
             }
         });
     }

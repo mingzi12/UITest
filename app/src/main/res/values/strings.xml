@@ -15,4 +15,5 @@
     <string name="title_activity_toast">ToastActivity</string>
     <string name="title_activity_notify">NotifyActivity</string>
     <string name="title_activity_one">oneActivity</string>
+    <string name="title_activity_pager_title">PagerTitleActivity</string>
 </resources>

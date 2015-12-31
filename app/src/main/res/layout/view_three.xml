@@ -8,7 +8,9 @@
     android:background="@color/colorPrimaryDark">
     <TextView
         android:id="@+id/mtextview3"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
         android:text="This is the third view"/>
 </LinearLayout>

@@ -10,7 +10,7 @@ import com.mingzi.uitest.R;
 
 import java.util.ArrayList;
 
-public class oneActivity extends AppCompatActivity {
+public class ViewActivity extends AppCompatActivity {
     private ViewPager mViewPager;
     private ArrayList<View> mArrayList;
     private MyPagerAdapter myPagerAdapter;
@@ -18,7 +18,10 @@ public class oneActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_one);
+        setContentView(R.layout.activity_view);
+        initViewPager();
+    }
+    private void initViewPager(){
         mViewPager = (ViewPager) findViewById(R.id.mViewPager);
         mArrayList =new ArrayList<>();
         mLayoutInflater = getLayoutInflater();
@@ -28,5 +31,4 @@ public class oneActivity extends AppCompatActivity {
         myPagerAdapter=new MyPagerAdapter(mArrayList);
         mViewPager.setAdapter(myPagerAdapter);
     }
-
 }
