@@ -77,6 +77,10 @@
         <activity
             android:name=".pagerstrip.PagerTitleActivity"
             android:label="@string/title_activity_pager_title"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".drawerlayout.DrawerLayoutActivity"
+            android:label="@string/title_activity_drawer_layout"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

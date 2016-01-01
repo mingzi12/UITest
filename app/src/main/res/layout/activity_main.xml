@@ -140,4 +140,24 @@
         android:textAllCaps="false"
         android:layout_below="@+id/dynamic_flipper_btn"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DrawerLayout"
+        android:id="@+id/drawerlayout_btn"
+        android:textAllCaps="false"
+        android:layout_below="@+id/viewpager_btn"
+        android:layout_alignLeft="@+id/arrayadapter"
+        android:layout_alignStart="@+id/arrayadapter" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="New Text"
+        android:gravity="center_vertical"
+        android:id="@+id/config_textView"
+        android:layout_below="@+id/drawerlayout_btn"
+        android:layout_alignRight="@+id/flipper_btn"
+        android:layout_alignEnd="@+id/flipper_btn" />
 </RelativeLayout>

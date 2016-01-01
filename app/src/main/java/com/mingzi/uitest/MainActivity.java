@@ -1,12 +1,15 @@
 package com.mingzi.uitest;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.mingzi.uitest.autocompletetext.AutoCompleteTextActivity;
+import com.mingzi.uitest.drawerlayout.DrawerLayoutActivity;
 import com.mingzi.uitest.expandablelistview.ExpandableListViewActivity;
 import com.mingzi.uitest.gridview.GridViewActivity;
 import com.mingzi.uitest.notification.NotifyActivity;
@@ -22,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mUpdateBtn;
     private Button mSpinnerBtn;
     private Button mAutoCompleteBtn;
+    private TextView mConfigTextView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +44,9 @@ public class MainActivity extends AppCompatActivity {
         initToastBtn();
         initViewPagerBtn();
         initPagerTitleBtn();
-    }
+        initDrawerBtn();
+        initConfigTextView();
+        }
     public void initNextBtn(){
         mButton= (Button) findViewById(R.id.arrayadapter);
         mButton.setOnClickListener(new View.OnClickListener() {
@@ -181,5 +187,25 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(mPagerTitleIntent);
             }
         });
+    }
+    public void initDrawerBtn(){
+        Button mDrawerBtn = (Button) findViewById(R.id.drawerlayout_btn);
+        mDrawerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mDrawerBtnIntent = new Intent(MainActivity.this, DrawerLayoutActivity.class);
+                startActivity(mDrawerBtnIntent);
+            }
+        });
+    }
+    public void initConfigTextView(){
+        mConfigTextView = (TextView) findViewById(R.id.config_textView);
+        StringBuffer mConfigBuffer = new StringBuffer();
+        Configuration mConfiguration = getResources().getConfiguration();
+        mConfigBuffer.append(mConfiguration.densityDpi+";");
+        mConfigBuffer.append(mConfiguration.screenHeightDp+";");
+        mConfigBuffer.append(mConfiguration.screenWidthDp+".");
+        mConfigTextView.setText(mConfigBuffer.toString());
+
     }
 }

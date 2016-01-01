@@ -16,4 +16,8 @@
     <string name="title_activity_notify">NotifyActivity</string>
     <string name="title_activity_one">oneActivity</string>
     <string name="title_activity_pager_title">PagerTitleActivity</string>
+    <string name="title_activity_drawer_layout">DrawerLayoutActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

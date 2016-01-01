@@ -31,7 +31,9 @@ public class SimpleAdapterActivity extends AppCompatActivity {
         }
 
         //创建一个simpleAdapter
-        SimpleAdapter myAdapter = new SimpleAdapter(getApplicationContext(), listitem, R.layout.list_item, new String[]{"touxiang", "name", "says"}, new int[]{R.id.imgtou, R.id.name, R.id.says});
+        SimpleAdapter myAdapter = new SimpleAdapter(getApplicationContext(), listitem,
+                R.layout.list_item, new String[]{"touxiang", "name", "says"},
+                new int[]{R.id.imgtou, R.id.name, R.id.says});
         ListView listView = (ListView) findViewById(R.id.mSimpleListview);
         listView.setAdapter(myAdapter);
     }
